@@ -1,12 +1,11 @@
+/* Common Property Start Here */
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
-
 h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -14,15 +13,13 @@ h1 {
 h2{
     text-align: center;
     font-size: 1.5rem;
-    /* color:white; */
+    font-size: 1.5rem;
 }
-
 a {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
 }
-
 p {
     font-size: 1.2rem;
     text-align: justify;
@@ -33,7 +30,11 @@ p {
     margin: 20px auto;
     width: 70px;
 }
-
+.clear::after {
+    clear: both;
+    display: table;
+    content: '';
+}
 [class*="col-"] {
     float: left;
     padding: 10px;
@@ -43,17 +44,19 @@ p {
 [class*="col-"] {
     width: 100%;
 }
+/* Common Property End Here */
 
 /* Navbar Start Here */
 .navbar {
-    background-color: #40868b;
+    background-color: #4086CB;
     padding: 1% 7%;
     text-align: center;
 }
-
 .navbar img {
     width: 100px;
-    height: 100px;
+    height: 90px;
+    border: 2px solid white;
+    padding: 5px;
     border-radius: 50%;
 }
 
@@ -62,38 +65,28 @@ p {
     margin: 0;
     padding-top: 10px;
 }
-
 .navbar-menu {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
 }
-
 .navbar-menu a {
     background-color: #0c6168;
     border-radius: 10px;
     margin: 7px 0px;
     padding: 10px;
 }
-
 .navbar-menu a:hover {
     background-color: gray;
 }
-
-.navbar::after {
-    clear: both;
-    display: table;
-    content: '';
-}
-
 /* Navbar Start Here */
-
 
 /* Profile Design Start Here */
 .profile {
     padding: 130px 10px;
     position: relative;
     text-align: center;
+    background-color: #40868b;
 }
 .profile img{
     width: 150px;
@@ -105,14 +98,14 @@ p {
     transition: transform 2s;
 }
 .profile .top-weather-icon:hover{
-    transform: rotate(360deg);
+    transform: rotate(900deg);
 }
 .profile-desc h1{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
 }
 .profile-desc p{
-    color:gray;
+    color:white;
     text-align: center;
     width:90%;
     margin:0 auto  20px auto;
@@ -126,12 +119,8 @@ p {
 .profile .bottom-weather-icon:hover{
     transform: rotate(360deg);
 }
-.profile::after{
-    clear: both;
-    content: '';
-    display: table;
-}
 /* Profile Design end Here */
+
 /* About Me starts Here */
 .about-me{
     background-color: #39a4ac;
@@ -163,16 +152,12 @@ p {
     text-align: center;
     margin: 10px;
 }
-.about-me::after{
-    content:'';
-    clear:both;
-    display: table;
-}
 /* About Me end Here */
 
 /* Experience start Here */
 .professional-experience{
-    padding: 1% 0%;
+    padding: 0% 0%;
+    margin:0px;
 }
 .professional-experience .card{
     background-color: #a39e9e;
@@ -296,13 +281,8 @@ p {
 @keyframes lv{
     to{width: 35%;}
 }
-
-.professional-experience::after{
-    content:'';
-    clear:both;
-    display: table;
-}
 /* Experience end Here */
+
 /* Achievement and Contact Section start here */
 .achievement-contact{
     padding: 1% 7%;
@@ -344,12 +324,8 @@ p {
     margin:20px;
     text-align: center;
 }
-.achievement-contact::after{
-    content:'';
-    clear:both;
-    display: table;
-}
 /* Achievement and Contact Section ends here */
+
 /* Footer start here */
 .footer{
     background-color: black;
@@ -365,9 +341,5 @@ p {
     padding: 5px;
     float:left;
 }
-.footer::after{
-    content:'';
-    clear:both;
-    display: table;
-}
-/* Footer start here */
+/* Footer end here */
+
