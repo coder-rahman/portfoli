@@ -27,6 +27,10 @@
     margin: 20px 0px;
     background-color: transparent;
 }
+.navbar-menu a:hover{
+    background-color: black;
+    font-weight: bolder;
+}
 /*Navbar ends here*/
 /* Profile Design start */
 .profile .top-weather-icon {
@@ -40,7 +44,6 @@
     width: 140px;
 }
 .profile-desc p{
-    color:gray;
     margin:0 auto;
     width: 50%;
     text-align: center;
@@ -88,5 +91,8 @@
 }
 /* Achievement and Contact Section ends here */
 /* Footer start here */
-
+.footer-desc{
+    display: flex;
+    flex-direction: column;
+}
 /* Footer ends here */
